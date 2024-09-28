@@ -12,11 +12,18 @@ module.exports = {
       grayb:"#717171",
       black: '#000000',
       grayd: '#F8F9F9 ',
-      red: '#E74C3C',
-      purple: '#5D6D7E'
+      red: '#dc2626',
+      purple: '#5D6D7E',
+      lightred: '#ef4444',
+      lightBlue: '#06b6d4',
+      Blue: '#0891b2'
+    },
+
+    fontFamily: {
+        'crismon': [ "Crimson Text", "serif"]
     },
  
-    extend: {},
+    extend: {}
   },
   plugins: [
     
