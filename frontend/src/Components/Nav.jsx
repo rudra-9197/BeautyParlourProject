@@ -1,7 +1,7 @@
 
 const Nav = ()=>{
 
-    return(    <nav className="w-screen">
+    return(    <nav className="w-screen overflow-hidden">
     <div className="flex flex-row bg-purple">
       <div className="text-white p-4 w-fit mx-auto my-auto">
         <p className="text-white text-5xl font-Pacifico">
