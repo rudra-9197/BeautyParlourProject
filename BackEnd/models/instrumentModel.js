@@ -10,7 +10,7 @@ const Prodchema = new Schema({
         require: [true,"Product Title is required"],
     },
 
-    product: {
+    instrument: {
         type: String,
         require:[true,"Product Name is requied"],
         unique: true
@@ -20,7 +20,12 @@ const Prodchema = new Schema({
     price:{
         type:String,
         require:[true,"Product Price is requied"]
+    },
+    instrumentDesc:{
+        type:String,
+        require:[true,"Product Price is requied"]
     }
+
 
 })
 
