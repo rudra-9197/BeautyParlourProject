@@ -16,9 +16,7 @@ function loadScript(src) {
   });
 }
 
-
 async function displayRazorpay(bookReq) {
-  
   const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js");
 
   if (!res) {
@@ -26,11 +24,10 @@ async function displayRazorpay(bookReq) {
     return;
   }
 
-console.log(bookReq.price);
-
+  console.log(bookReq.price);
 
   try {
-    const response = await fetch("http://localhost:4000/createOrder", {
+    const response = await fetch("https://beautyparlourproject.onrender.com/createOrder", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -42,11 +39,8 @@ console.log(bookReq.price);
 
     const data = await response.json();
 
-    if(data)
-    {
-  
-     const  Paymntdet = data.data;
-     
+    if (data) {
+      const Paymntdet = data.data;
 
       const options = {
         key: "rzp_test_3ZkshMAHdkZBQe", // Enter the Key ID generated from the Dashboard
@@ -55,7 +49,7 @@ console.log(bookReq.price);
         currency: Paymntdet.currency,
         name: "Acme Corp",
         description: "Test Transaction",
-    
+
         order_id: data.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         prefill: {
           name: "Gaurav Kumar",
@@ -69,14 +63,9 @@ console.log(bookReq.price);
       const paymentObject = new window.Razorpay(options);
       paymentObject.open();
     }
-   
-  
-  
   } catch (error) {
     alert(error.message);
   }
-
-
 }
 
 const AllServices = () => {

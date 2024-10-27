@@ -19,7 +19,7 @@ const AdminObj = () => {
 
   const updateProduct = async () => {
     setLoading(true);
-    const response = await axios.get("http://localhost:4000/getProductTitle");
+    const response = await axios.get("https://beautyparlourproject.onrender.com/getProductTitle");
 
     console.log(response);
 
@@ -30,11 +30,12 @@ const AdminObj = () => {
     const newArray = [...ProductTitle];
 
     await axios
-      .post(`http://localhost:4000/updateProductTitle/${ID}`, {
+      .post(`https://beautyparlourproject.onrender.com/updateProductTitle/${ID}`, {
         ProductTitle: prodctArray,
       })
       .then((response) => {
         setLoading(false);
+        
         alert("Updated Successfully");
         console.log("Array updated successfully:", response.data);
       })

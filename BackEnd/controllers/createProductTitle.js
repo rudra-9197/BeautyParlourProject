@@ -29,7 +29,6 @@ try {
     const  {id} = req.params;
     const {ProductTitle} = req.body;
 
-    console.log(req.body);
 
     const result = await productTitle.findByIdAndUpdate(id, {$push:{ProductTitle:ProductTitle} }, {new: false, useFindAndModify: false})
   
