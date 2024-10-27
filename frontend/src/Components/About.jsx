@@ -7,7 +7,7 @@ const About = () => {
 
     const handleClick = () => {
       // Navigate to another page (Page2)
-      navigate("/Home/Product");
+      navigate("/Product");
     };
   
     
