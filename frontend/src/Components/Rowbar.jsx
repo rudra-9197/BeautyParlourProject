@@ -45,7 +45,7 @@ const RowBar = ()=>{
         return () => {
           if (timeoutId) {
             clearTimeout(timeoutId); // Stop the slideshow
-            console.log("Slideshow stopped!");
+            
           }
         };
     

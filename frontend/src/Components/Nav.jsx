@@ -4,7 +4,7 @@ const Nav = ()=>{
     return(    <nav className="w-screen overflow-hidden">
     <div className="flex flex-row bg-purple">
       <div className="text-white p-4 w-fit mx-auto my-auto">
-        <p className="text-white text-5xl font-Pacifico">
+        <p className="text-white text-2xl font-Pacifico lg:text-5xl md:text-3xl">
           Dreamz Studio and Herbal Beauty Parlor
         </p>
       </div>

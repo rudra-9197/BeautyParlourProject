@@ -3,6 +3,7 @@ import Service from "../Components/Service";
 import RowBar from "../Components/Rowbar";
 import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
+import ProductHead from "../Components/ProductHead";
 
 const Home = () => {
   return (
@@ -17,7 +18,9 @@ const Home = () => {
       <div>
         <About></About>
       </div>
-
+      <div>
+        < ProductHead></ProductHead>
+      </div>
       <div className="shadow-lg ">
         <Service></Service>
       </div>

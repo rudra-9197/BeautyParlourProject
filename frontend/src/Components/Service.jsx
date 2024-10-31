@@ -5,7 +5,7 @@ const Service = () => {
         <div className="p-12 ">
           <h1 className="p-4 text-4xl font-crismon">Book Your Appointment</h1>
 
-          <p className="text-center mx-auto font-medium text-2xl pl-10 w-1/2 font-crismon  ">
+          <p className="text-center mx-auto font-medium text-2xl max-w-screen-md lg:w-1/2 font-crismon  ">
             Looking for a quick makeover or a relaxing beauty treatment? Choose
             your service, select a time, and book with ease. Your beauty journey
             starts here—secure your spot today!
