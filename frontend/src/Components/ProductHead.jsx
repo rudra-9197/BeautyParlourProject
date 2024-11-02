@@ -32,7 +32,7 @@ const ProductHead = ({data}) => {
 
   return (
     <div className="relative max-h-max mx-auto my-auto ">
-      {showLoading ? (
+     
         <div
           className="bg-grayd mx-auto mt-4 flex flex-row content-center items-center overflow-x-auto"
           ref={scrollContainerRef}
@@ -59,12 +59,7 @@ const ProductHead = ({data}) => {
             </div>
           ))}
         </div>
-      ) : (
-        <div class="relative w-8 h-8 p-1 rounded-full ">
-          <div class="absolute inset-0 animate-spin-gradient p-4   bg-gradient-to-r from-red via-white to-Blue rounded-full"></div>
-          <div class="relative w-full h-full bg-white rounded-full"></div>
-        </div>
-      )}
+
     </div>
   );
 };

@@ -1,7 +1,25 @@
 
+import { Facebook, Instagram, Twitter, Video, Linkedin } from 'lucide-react'
+
+
+
 const Footer = ()=>{
 
-    return(       <div className="overflow-hidden">
+    return(      
+      
+  
+            <footer className="py-6 bg-pink-500 text-white text-center">
+            <p>&copy; 2024 Dreamz Studio and Herbal Beauty Parlor. All Rights Reserved.</p>
+            <div className="flex justify-center space-x-4 mt-4">
+              <a href="#" aria-label="Facebook"><Facebook /></a>
+              <a href="#" aria-label="Instagram"><Instagram /></a>
+              <a href="#" aria-label="Twitter"><Twitter /></a>
+              <a href="#" aria-label="Linkedin"><Linkedin /></a>
+            </div>
+
+                      {/* Footer 
+          
+                <div className="overflow-hidden">
     <footer className="bg-grayb ">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
@@ -210,7 +228,25 @@ const Footer = ()=>{
         </div>
       </div>
     </footer>
-  </div>)
+  </div>
+            */}
+          </footer>
+     
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  )
 }
 
 export default Footer;

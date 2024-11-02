@@ -1,15 +1,34 @@
-import { useNavigate } from "react-router-dom";
-import Product from "../Pages/Product";
+
+
+
 
 const About = () => {
+
+  /*
   const navigate = useNavigate();
 
   const handleClick = () => {
     // Navigate to another page (Page2)
     navigate("/Product");
-  };
+  };*/
 
   return (
+    <div>
+      {/* About Us */}
+      <section id="about" className="py-20 px-4 md:px-0   ">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-8">About Us</h2>
+          <p className="text-xl leading-relaxed">
+            At Dreams Beauty Parlour, we are committed to providing personalized
+            beauty services that enhance your natural radiance. Our team of
+            expert stylists and aestheticians are dedicated to creating a serene
+            and luxurious experience tailored to your unique needs.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    /*
     <div className=" shadow-lg flex flex-col-reverse lg:flex-row items-center justify-around">
       <div className="mx-auto items-center flex flex-col ">
         <p className=" hidden lg:block text-center lg:text-center  font-medium text-2xl p-4 lg:p-0 w-4/5 font-crismon   ">
@@ -45,6 +64,8 @@ const About = () => {
         />
       </div>
     </div>
+
+  */
   );
 };
 

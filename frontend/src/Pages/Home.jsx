@@ -4,14 +4,19 @@ import RowBar from "../Components/Rowbar";
 import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
 import ProductHead from "../Components/ProductHead";
-import BeautyParlor from "../Components/Home1";
+import WelcomeBanner from "../Components/WelcomeBanner";
+import ContactCard from "../Components/ContactCard";
 
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Navbutton from "../Components/NavButton";
+import Gallery from "../Components/Gallery";
+import Testimonials from "../Components/Testimonials";
+
 
 const Home = () => {
   const [titles, setTitle] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
 
 
@@ -34,6 +39,8 @@ const Home = () => {
 
   return (
     <div className="w-screen h-screen p-0 b-0 mx-auto my-auto">
+
+<div className="min-h-screen bg-pink-50 text-gray-800">
       {loading ? (
         <div className="fixed inset-0 flex  items-center justify-center w-screen h-screen">
           <div className="relative w-40 h-40 p-2 rounded-full">
@@ -43,9 +50,21 @@ const Home = () => {
         </div>
       ) : (
         <div>
-            <BeautyParlor/>
+            <Navbutton></Navbutton>
+            <Nav></Nav>
+         
+            <WelcomeBanner></WelcomeBanner>
+            <About></About>
+            <Service></Service>
+            <Gallery></Gallery>
+            <Testimonials></Testimonials>
+            <ContactCard></ContactCard>
+            <Footer></Footer>
+
         </div>
       )}
+
+</div>
     </div>
   );
 };
