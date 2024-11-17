@@ -10,7 +10,7 @@ const ContactCard = () => {
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-4xl font-bold mb-12 text-center text-white bg-pink-500 p-4">Contact Us For Booking</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
+     {/*  <!div>
             <form className="space-y-4">
               <input
                 type="text"
@@ -32,6 +32,8 @@ const ContactCard = () => {
               </button>
             </form>
           </div>
+
+  */}
           <div className="flex flex-col justify-center">
             <div className="flex items-center mb-4">
               <a href="https://maps.app.goo.gl/xAq6o11hq4cJtTbr9?g_st=aw">
@@ -48,7 +50,7 @@ const ContactCard = () => {
             </div>
             <div className="flex items-center">
               <Mail className="text-pink-500 w-6 h-6 mr-2" />
-              <p>info@blissfulbeauty.com</p>
+              <p>dreamzmakeup4491@gmail.com</p>
             </div>
           </div>
         </div>
